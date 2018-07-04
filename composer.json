@@ -1,0 +1,23 @@
+{
+    "name": "kagatan/sms-fly",
+    "description": "Send sms from sms-fly",
+    "keywords": [
+      "laravel",
+      "sms-fly-ua"
+    ],
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Kagatan",
+            "email": "max_stupakov@mail.ru"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+      "psr-4":{
+        "Kagatan\\SmsFly\\": "src/"
+      }
+  }
+}

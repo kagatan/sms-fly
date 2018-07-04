@@ -96,7 +96,7 @@ class SmsFlyClient
      * @param array $params
      * @return mixed|null
      */
-    protected function execute($params = array(), $dataXML)
+    protected function execute($params = array())
     {
         //Если не переопределения праметром используем default
         if (empty($params['login']) AND empty($params['password'])) {
@@ -104,7 +104,7 @@ class SmsFlyClient
             $params['password'] = $this->password;
         }
 
-        $dataXML = $this->buildXML($dataXML);
+        $dataXML = $this->buildXML($params);
 
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_USERPWD, $params['login'] . ':' . $params['password']);

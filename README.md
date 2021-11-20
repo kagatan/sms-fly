@@ -194,9 +194,10 @@ public function test(){
             ->from("WiFi-POINT")
             ->toArray();
 
-        $id = SmsFlyMessage::send($message);
-        
-        echo $id;
+        $id = SmsFly::send($message);
+        $errors = SmsFly::getErrors();
+             
+        dd($id, $errors);
 }
 ```
 
